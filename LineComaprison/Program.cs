@@ -6,25 +6,28 @@ namespace LineComaprison
     {
         static void Main(string[] args)
         {
-            //length of lines
-            LengthOfLine  line1 = new LengthOfLine();
-            LengthOfLine  line2 = new LengthOfLine ();
-            LengthOfLine line3 = new LengthOfLine();
-            double a = line1.Length(2, 8, 8, 12);
-            double b = line2.Length(2, 7, 8, 12);
-            double c = (a.CompareTo (b));
-            if (c == 0)
-            {
-                Console.WriteLine("Lines Are Equal");
-            }
-            else if (c == 1)
-            {
-                Console.WriteLine("Line1 is greater than Line2");
-            }
+            Console.WriteLine("Welcome to LineComparision");
+            LengthOfLine length;
+            length = new LengthOfLine();
+            // Calculate cal;
+            //cal = new Calculate_length();
+            double Line1 = length.Line(1, 1, 1, 2);
+            double Line2 = length.Line(1, 2, 2, 2); ;
+            //Equals
+            if (Line1  == Line2 )
+
+                Console.WriteLine("lines are equal");
+            
             else
-            {
-                Console.WriteLine("line2 is grater than line1");
-            }
+            
+                Console.WriteLine("lines are not equal");
+                        
+            //compareTo
+            if (Line1.CompareTo(Line2) == 0)
+                Console.WriteLine("Both Line are  equal");
+            else
+                Console.WriteLine("They are not equal");
+           // Console.ReadKey();
         }
     }
 }

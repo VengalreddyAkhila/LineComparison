@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineComaprison", "LineComaprison\LineComaprison.csproj", "{1A89D5CE-2F96-4255-8855-851C811DC4CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LineComaprison", "LineComaprison\LineComaprison.csproj", "{1A89D5CE-2F96-4255-8855-851C811DC4CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

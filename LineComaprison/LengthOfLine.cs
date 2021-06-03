@@ -4,14 +4,17 @@ using System.Text;
 
 namespace LineComaprison
 {
-    public class LengthOfLine
+     abstract class Length
+     {
+        public abstract double  Line(double X1, double X2, double Y1, double Y2);
+     }
+    class LengthOfLine : Length
     {
-        public double  Length(double X1, double X2, double Y1, double Y2)
-        { 
-            double lengthofline  = Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2));
+        public override double Line(double X1, double X2, double Y1, double Y2)
+        {
+            double lengthofline = Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2));
             Console.WriteLine(lengthofline);
             return lengthofline;
-         
         }
     }
 }
